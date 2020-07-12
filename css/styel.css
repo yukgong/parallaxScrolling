@@ -1,0 +1,131 @@
+:root {
+    --BROWN_COLOR: #3E1702;
+    --SUB_BROWN_COLOR: #654433;
+    --ORANG_COLOR: #F06222;
+    --BEIGE_COLOR: #FFFCF8;
+    --GRAY_COLOR: #858585;
+}
+
+body,
+html {
+    font-size: 16px;
+    background-color: var(--BEIGE_COLOR);
+    color: var(--SUB_BROWN_COLOR);
+}
+
+.nav-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--ORANG_COLOR);
+}
+
+.title {
+    position: absolute;
+    top: -8vw;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1,
+h2 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.4;
+    letter-spacing: -0.5px;
+    font-size: 9vw;
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 7vw;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 0.5em;
+    color: var(--ORANG_COLOR);
+    text-align: center;
+}
+
+i {
+    color: var(--GRAY_COLOR);
+    text-align: center;
+}
+
+.scroll-sec {
+    position: relative;
+    width: 100%;
+    padding: 20vw 24px;
+    margin: 0 auto;
+    border: solid 2px red;
+}
+
+.disc-msg {
+    max-width: 700px;
+    margin: 0 auto;
+    top: 35vh;
+}
+
+.sticky-elem {
+    display: none;
+    position: fixed;
+    left: 0;
+}
+
+#show-sec-0 #scroll-sec-0 .sticky-elem,
+#show-sec-1 #scroll-sec-1 .sticky-elem {
+    display: block;
+}
+
+@media (min-width: 640px) {
+    .disc-msg {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 6vw;
+        margin-bottom: 1em;
+    }
+    h2 {
+        font-size: 4vw;
+    }
+    .title {
+        top: -2vw;
+    }
+}
+
+@media (min-width: 1024px) {
+    .scroll-sec {
+        padding-top: 13vw;
+    }
+    .disc-msg {
+        max-width: 640px;
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 5vw;
+        margin-bottom: 0.5em;
+    }
+    h2 {
+        font-size: 4vw;
+        margin-bottom: 0.5em;
+    }
+}
