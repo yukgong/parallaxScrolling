@@ -79,15 +79,18 @@ i {
 }
 
 .disc-msg {
-    max-width: 700px;
-    margin: 0 auto;
     top: 35vh;
+    width: calc(100% - 48px);
+    position: fixed;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    opacity: 0;
 }
 
 .sticky-elem {
     display: none;
-    position: fixed;
-    left: 0;
+    /* position: fixed; */
 }
 
 #show-sec-0 #scroll-sec-0 .sticky-elem,
@@ -118,7 +121,6 @@ i {
     }
     .disc-msg {
         max-width: 640px;
-        margin: 0 auto;
     }
     h1 {
         font-size: 5vw;
